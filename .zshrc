@@ -5,9 +5,14 @@ fi
 
 # Customize to your needs...
 alias c="clear"
-alias conf="vim ~/.zshrc"
-alias res=". ~/.zshrc"
-alias gilp="git log pretty=oneline"
+alias gilp="git log --pretty=oneline"
+rc() {
+	if [ "$1"=="vim" ]; then
+		vim ~/.vimrc
+	else 
+		echo "unknown conf file"
+	fi
+}
 up() {
 	if [ $# -eq 0 ]; then
 			cd ../; ls
