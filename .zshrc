@@ -7,17 +7,20 @@ fi
 alias c="clear"
 alias gilp="git log --pretty=oneline"
 conf() {
-	case $1 in
-		"vim") 
-			cp ./.vimrc ~/.vimrc
-			;;
-		"zsh")
-			cp ./.zshrc ~/.zshrc
-			;;
-		"prezto")
-			cp ./.zpreztorc ~/.zpreztorc
-			;;
-	esac
+	if [ $# -gt 0 ]; then
+		case $1 in
+			"vim") 
+				C=".vimrc"
+				;;
+			"zsh")
+				C=".zshrc"
+				;;
+			"prezto")
+				C=".zpreztorc"
+				;;
+		esac
+	sudo cp ./$C ~/$C 
+	fi
 }
 up() {
 	UP="../"
