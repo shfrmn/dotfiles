@@ -6,12 +6,14 @@ fi
 # Customize to your needs...
 alias c="clear"
 alias gilp="git log --pretty=oneline"
-rc() {
-	if [ "$1"=="vim" ]; then
-		vim ~/.vimrc
-	else 
-		echo "unknown conf file"
-	fi
+saveconf() {
+	case $1 in
+		"vim") 
+			mv ./.vimrc ~/.vimrc
+			;;
+		"zsh")
+			mv ./.zshrc ~/.zshrc
+	esac
 }
 up() {
 	if [ $# -eq 0 ]; then
