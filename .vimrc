@@ -21,7 +21,7 @@ Plugin 'jelera/vim-javascript-syntax'
 Plugin 'itchyny/lightline.vim'
 Plugin 'junegunn/goyo.vim'
 Plugin 'junegunn/limelight.vim'
-
+Plugin 'AndrewRadev/switch.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -57,3 +57,12 @@ set tabstop=4 softtabstop=0 noexpandtab shiftwidth=4
 set number
 " colorscheme
 colorscheme molokai
+
+" Switch plugin
+
+let g:switch_custom_definitions =
+	\ [
+	\ 	['fn', 'function () {}']
+	\ ]
+
+
