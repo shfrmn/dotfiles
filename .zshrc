@@ -13,6 +13,10 @@ saveconf() {
 			;;
 		"zsh")
 			cp ./.zshrc ~/.zshrc
+			;;
+		"prezto")
+			cp ./.zpreztorc ~/.zpreztorc
+			;;
 	esac
 }
 up() {
