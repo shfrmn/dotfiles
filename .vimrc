@@ -17,7 +17,7 @@ Plugin 'easymotion/vim-easymotion'
 Plugin 'Raimondi/delimitMate'
 Plugin 'ervandew/supertab'
 Plugin 'helino/vim-json'
-
+Plugin 'jelera/vim-javascript-syntax'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
