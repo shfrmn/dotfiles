@@ -6,7 +6,7 @@ fi
 # Custom
 alias c="clear"
 alias gilp="git log --pretty=oneline"
-saveconf() {
+conf() {
 	case $1 in
 		"vim") 
 			cp ./.vimrc ~/.vimrc
@@ -29,6 +29,12 @@ up() {
 		done
 	fi
 	cd $UP; ls
+}
+bm() {
+	ln -s $(pwd) ~/work/dotfiles/symlinks/$1
+}
+to() {
+	cd $(readlink -f ~/work/dotfiles/symlinks/$1)
 }
 pong() {
   ping -c 6 8.8.8.8
