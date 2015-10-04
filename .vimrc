@@ -18,6 +18,10 @@ Plugin 'Raimondi/delimitMate'
 Plugin 'ervandew/supertab'
 Plugin 'helino/vim-json'
 Plugin 'jelera/vim-javascript-syntax'
+Plugin 'itchyny/lightline.vim'
+Plugin 'junegunn/goyo.vim'
+Plugin 'junegunn/limelight.vim'
+
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -34,7 +38,13 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
-" ---autocmd vimenter * NERDTree
+" Next line: nerdtree autolaunch
+" autocmd vimenter * NERDTree
+
+" Limelight coupled with Goyo
+autocmd! User GoyoEnter Limelight
+autocmd! User GoyoLeave Limelight!
+
 set laststatus=2
 
 
