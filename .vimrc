@@ -38,7 +38,7 @@ filetype plugin indent on    " required
 set laststatus=2
 
 
-
+" 
 set background=dark
 syntax on
 " tab settings

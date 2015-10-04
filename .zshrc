@@ -19,7 +19,8 @@ conf() {
 				C=".zpreztorc"
 				;;
 		esac
-	sudo cp ./$C ~/$C 
+	sudo cp ./$C ~/$C
+   	echo "Configuration file copied"
 	fi
 }
 up() {
@@ -35,9 +36,15 @@ up() {
 }
 bm() {
 	ln -s $(pwd) ~/work/dotfiles/symlinks/$1
+	echo 'Bookmark created'
 }
 to() {
-	cd $(readlink -f ~/work/dotfiles/symlinks/$1)
+	cd $(readlink -f ~/work/dotfiles/symlinks/$1); ls
+}
+shist() {
+	if [ $# -gt 0 ]; then
+		history 1 | grep $1
+	fi
 }
 pong() {
   ping -c 6 8.8.8.8
