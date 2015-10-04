@@ -9,10 +9,10 @@ alias gilp="git log --pretty=oneline"
 saveconf() {
 	case $1 in
 		"vim") 
-			mv ./.vimrc ~/.vimrc
+			cp ./.vimrc ~/.vimrc
 			;;
 		"zsh")
-			mv ./.zshrc ~/.zshrc
+			cp ./.zshrc ~/.zshrc
 	esac
 }
 up() {
