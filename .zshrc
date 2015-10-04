@@ -3,7 +3,7 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
-# Customize to your needs...
+# Custom
 alias c="clear"
 alias gilp="git log --pretty=oneline"
 saveconf() {
@@ -20,17 +20,15 @@ saveconf() {
 	esac
 }
 up() {
-	if [ $# -eq 0 ]; then
-			cd ../; ls
-	else
-		I=0
-		P=""
+	UP="../"
+	if [ $# -gt 0 ]; then
+		I=1
 		while [ $I -lt $1 ]; do
-			P="$P../"
+			UP="$UP../"
 			I=$[I+1]
 		done
-		cd $P; ls
 	fi
+	cd $UP; ls
 }
 pong() {
   ping -c 6 8.8.8.8
