@@ -4,6 +4,11 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Custom
+
+export TERM=xterm-256color
+
+#
+
 alias c="clear"
 alias gilp="git log --pretty=oneline"
 conf() {
