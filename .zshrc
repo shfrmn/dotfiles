@@ -39,6 +39,9 @@ up() {
 	fi
 	cd $UP; ls
 }
+jump() {
+	cd ../$1; ls
+}
 bm() {
 	ln -s $(pwd) ~/work/dotfiles/symlinks/$1
 	echo 'Bookmark created'
