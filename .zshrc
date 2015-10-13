@@ -54,6 +54,9 @@ shist() {
 		history 1 | grep $1
 	fi
 }
+vol() {
+	alsamixer -c 0
+}
 pong() {
   ping -c 6 8.8.8.8
 }
