@@ -57,6 +57,7 @@ shist() {
 vol() {
 	alsamixer -c 0
 }
+alias chrome="chromium"
 pong() {
   ping -c 6 8.8.8.8
 }
