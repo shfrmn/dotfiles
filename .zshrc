@@ -37,17 +37,17 @@ up() {
 			I=$[I+1]
 		done
 	fi
-	cd $UP; ls
+	cd $UP; ls -a
 }
 jump() {
-	cd ../$1; ls
+	cd ../$1; ls -a
 }
 bm() {
 	ln -s $(pwd) ~/work/dotfiles/symlinks/$1
 	echo 'Bookmark created'
 }
 to() {
-	cd $(readlink -f ~/work/dotfiles/symlinks/$1); ls
+	cd $(readlink -f ~/work/dotfiles/symlinks/$1); ls -a
 }
 shist() {
 	if [ $# -gt 0 ]; then
