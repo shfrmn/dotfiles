@@ -58,7 +58,12 @@ vol() {
 	alsamixer -c 0
 }
 shot() {
-	scrot -s ~/screenshots/$(date +%Y%m%d%H%M%S).png
+	scrot -sz ~/screenshots/$(date +%Y%m%d%H%M%S).png
+}
+empty() {
+	if [ $# -gt 0 ]; then
+		sudo rm -r ./$1; mkdir ./$1
+	fi
 }
 alias chrome="chromium"
 pong() {
