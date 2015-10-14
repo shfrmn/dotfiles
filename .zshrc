@@ -57,6 +57,9 @@ shist() {
 vol() {
 	alsamixer -c 0
 }
+shot() {
+	scrot -s ~/screenshots/$(date +%Y%m%d%H%M%S).png
+}
 alias chrome="chromium"
 pong() {
   ping -c 6 8.8.8.8
