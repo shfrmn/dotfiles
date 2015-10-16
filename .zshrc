@@ -66,6 +66,14 @@ empty() {
 	fi
 }
 alias chrome="chromium"
+alias pls="sudo"
 pong() {
   ping -c 6 8.8.8.8
+}
+
+pcmn-orphans() {
+	sudo pacman -Rns $(pacman -Qtdq)
+}
+pcmn-update() {
+	sudo pacman -Syu
 }
