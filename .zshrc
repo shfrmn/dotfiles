@@ -58,7 +58,11 @@ vol() {
 	alsamixer -c 0
 }
 shot() {
-	scrot -sz ~/screenshots/$(date +%Y%m%d%H%M%S).png
+	if [ $# -gt 0 ]; then
+		scrot -sz ~/screenshots/$1.png
+	else 
+		echo "Repeat with a file name"
+	fi
 }
 empty() {
 	if [ $# -gt 0 ]; then
@@ -66,6 +70,7 @@ empty() {
 	fi
 }
 alias chrome="chromium"
+alias transmission="transmission-qt"
 alias pls="sudo"
 pong() {
   ping -c 6 8.8.8.8
