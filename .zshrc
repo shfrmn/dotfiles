@@ -43,11 +43,11 @@ jump() {
 	cd ../$1; ls -a
 }
 bm() {
-	ln -s $(pwd) ~/work/dotfiles/symlinks/$1
+	ln -s $(pwd) ~/symlinks/$1
 	echo 'Bookmark created'
 }
 to() {
-	cd $(readlink -f ~/work/dotfiles/symlinks/$1); ls -a
+	cd $(readlink -f ~/symlinks/$1); ls -a
 }
 shist() {
 	if [ $# -gt 0 ]; then
