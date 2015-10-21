@@ -76,9 +76,15 @@ pong() {
   ping -c 6 8.8.8.8
 }
 
-pcmn-orphans() {
-	sudo pacman -Rns $(pacman -Qtdq)
-}
-pcmn-update() {
-	sudo pacman -Syu
+pcmn() {
+	if [ $# -gt 0  ]; then
+		case $1 in
+			"orphans")
+				sudo pacman -Rns $(pacman -Qtdq)
+				;;
+			"update")
+				sudo pacman -Syu
+				;;
+		esac
+	fi
 }
