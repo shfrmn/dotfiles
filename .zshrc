@@ -77,7 +77,7 @@ pong() {
 }
 
 pcmn() {
-	if [ $# -gt 0  ]; then
+	if [ $# -gt 0 ]; then
 		case $1 in
 			"orphans")
 				sudo pacman -Rns $(pacman -Qtdq)
@@ -86,5 +86,19 @@ pcmn() {
 				sudo pacman -Syu
 				;;
 		esac
+	fi
+}
+screen() {
+	if [ $# -gt 0 ]; then
+		case $1 in
+			"VGA")
+				xrandr --output LVDS1 --off --output VGA --auto
+				;;
+			"default")
+				xrandr --output LVDS1 --auto --output VGA --off
+				;;
+		esac
+	else
+		xrandr
 	fi
 }
