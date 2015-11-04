@@ -82,9 +82,6 @@ pcmn() {
 			"orphans")
 				sudo pacman -Rns $(pacman -Qtdq)
 				;;
-			"update")
-				sudo pacman -Syu
-				;;
 		esac
 	fi
 }
@@ -92,10 +89,10 @@ screen() {
 	if [ $# -gt 0 ]; then
 		case $1 in
 			"VGA")
-				xrandr --output LVDS1 --off --output VGA --auto
+				xrandr --output LVDS1 --off --output VGA1 --auto
 				;;
 			"default")
-				xrandr --output LVDS1 --auto --output VGA --off
+				xrandr --output VGA1 --off --output LVDS1 --auto
 				;;
 		esac
 	else
