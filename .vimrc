@@ -52,7 +52,7 @@ set laststatus=2
 set background=dark
 syntax on
 " tab settings
-set tabstop=4 softtabstop=0 noexpandtab shiftwidth=4
+set tabstop=4 shiftwidth=4 expandtab
 " line numbers
 set number
 " colorscheme
