@@ -22,6 +22,8 @@ Plugin 'itchyny/lightline.vim'
 Plugin 'junegunn/goyo.vim'
 Plugin 'junegunn/limelight.vim'
 Plugin 'AndrewRadev/switch.vim'
+Plugin 'ntpeters/vim-better-whitespace'
+Plugin 'Yggdroot/indentLine'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -58,11 +60,12 @@ set number
 " colorscheme
 colorscheme molokai
 
-" Switch plugin
-
+" 'Switch' plugin
 let g:switch_custom_definitions =
 	\ [
 	\ 	['fn', 'function () {}']
 	\ ]
 
+" indentLine
+let g:indentLine_char = '.'
 
