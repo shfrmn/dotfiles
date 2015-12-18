@@ -68,4 +68,5 @@ let g:switch_custom_definitions =
 
 " indentLine
 let g:indentLine_char = '.'
-
+" vim-better-whitespace
+highlight ExtraWhitespace ctermbg=234
