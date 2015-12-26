@@ -11,7 +11,6 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 " Other Plugins
-Plugin 'scrooloose/nerdtree'
 Plugin 'pangloss/vim-javascript'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'Raimondi/delimitMate'
@@ -19,8 +18,6 @@ Plugin 'ervandew/supertab'
 Plugin 'helino/vim-json'
 Plugin 'jelera/vim-javascript-syntax'
 Plugin 'itchyny/lightline.vim'
-Plugin 'junegunn/goyo.vim'
-Plugin 'junegunn/limelight.vim'
 Plugin 'AndrewRadev/switch.vim'
 Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'Yggdroot/indentLine'
@@ -40,17 +37,10 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
-" Next line: nerdtree autolaunch
-" autocmd vimenter * NERDTree
-
-" Limelight coupled with Goyo
-autocmd! User GoyoEnter Limelight
-autocmd! User GoyoLeave Limelight!
-
 set laststatus=2
 
 
-" 
+"
 set background=dark
 syntax on
 " tab settings
