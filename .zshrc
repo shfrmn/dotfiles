@@ -70,6 +70,7 @@ empty() {
 	fi
 }
 alias chrome="chromium"
+alias postman="chromium --app-id=fhbjgbiflinjbdggehcddcbncdddomop"
 alias transmission="transmission-qt"
 alias pls="sudo"
 pong() {
