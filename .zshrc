@@ -6,6 +6,13 @@ fi
 # Custom
 
 export TERM=xterm-256color
+export GOPATH=~/go
+export PATH=$PATH:$GOPATH/bin
+
+# Autocompletion for s (command line web search)
+if [ -f $GOPATH/src/github.com/zquestz/s/autocomplete/s-completion.bash ]; then
+    . $GOPATH/src/github.com/zquestz/s/autocomplete/s-completion.bash
+fi
 
 #
 
