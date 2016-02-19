@@ -78,7 +78,7 @@ empty() {
 }
 alias chrome="chromium"
 alias postman="chromium --app-id=fhbjgbiflinjbdggehcddcbncdddomop"
-alias meteo="curl -4 wttr.in/TelAviv"
+alias meteo="curl -4 wttr.in"
 alias transmission="transmission-qt"
 alias pls="sudo"
 pong() {
