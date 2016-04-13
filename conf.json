@@ -1,0 +1,11 @@
+{
+    "paths" : [
+        "~/test1"
+    ],
+    "assets" : [
+        {
+            "asset" : "assets/TEST",
+            "path" : "~/TEST"
+        }
+    ]
+}

@@ -1,0 +1,23 @@
+{
+  "name": "dotfiles",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node --harmony_destructuring index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shfrmn/dotfiles.git"
+  },
+  "author": "Joseph Shaferman <osipshaf@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shfrmn/dotfiles/issues"
+  },
+  "homepage": "https://github.com/shfrmn/dotfiles#readme",
+  "dependencies": {
+    "fs-jetpack": "^0.8.0"
+  }
+}
