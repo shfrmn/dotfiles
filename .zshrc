@@ -16,6 +16,7 @@ fi
 
 #
 
+alias off="sudo pacman -Syu && poweroff"
 alias c="clear"
 alias gilp="git log --pretty=oneline"
 conf() {
