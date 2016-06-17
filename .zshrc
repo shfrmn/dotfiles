@@ -18,7 +18,7 @@ fi
 
 alias off="sudo pacman -Syu && poweroff"
 alias c="clear"
-alias gilp="git log --pretty=oneline"
+alias glp="git log --oneline"
 conf() {
 	if [ $# -gt 0 ]; then
 		case $1 in
