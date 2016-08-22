@@ -3,7 +3,7 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
-# Custom
+#
 
 export TERM=xterm-256color
 export GOPATH=~/go
@@ -19,23 +19,6 @@ fi
 alias off="sudo pacman -Syu && poweroff"
 alias c="clear"
 alias glp="git log --oneline"
-conf() {
-	if [ $# -gt 0 ]; then
-		case $1 in
-			"vim") 
-				C=".vimrc"
-				;;
-			"zsh")
-				C=".zshrc"
-				;;
-			"prezto")
-				C=".zpreztorc"
-				;;
-		esac
-	sudo cp ./$C ~/$C
-   	echo "Configuration file copied"
-	fi
-}
 up() {
 	UP="../"
 	if [ $# -gt 0 ]; then
@@ -65,36 +48,18 @@ shist() {
 vol() {
 	alsamixer -c 0
 }
-shot() {
-	if [ $# -gt 0 ]; then
-		scrot -sz ~/screenshots/$1.png
-	else 
-		echo "Repeat with a file name"
-	fi
-}
 empty() {
 	if [ $# -gt 0 ]; then
 		sudo rm -r ./$1; mkdir ./$1
 	fi
 }
-alias chrome="chromium"
 alias postman="chromium --app-id=fhbjgbiflinjbdggehcddcbncdddomop"
-alias meteo="curl -4 wttr.in"
-alias transmission="transmission-qt"
 alias pls="sudo"
+
 pong() {
   ping -c 6 8.8.8.8
 }
 
-pcmn() {
-	if [ $# -gt 0 ]; then
-		case $1 in
-			"orphans")
-				sudo pacman -Rns $(pacman -Qtdq)
-				;;
-		esac
-	fi
-}
 screen() {
 	if [ $# -gt 0 ]; then
 		case $1 in
