@@ -54,6 +54,8 @@ empty() {
 	fi
 }
 alias postman="chromium --app-id=fhbjgbiflinjbdggehcddcbncdddomop"
+alias inbox="chromium --app-id=pkclgpgponpjmpfokoepglboejdobkpl"
+alias youtube="chromium --app-id=blpcfgokakmgnkcojhhkbfbldkacnbeo"
 alias pls="sudo"
 
 pong() {
