@@ -53,10 +53,20 @@ empty() {
 		sudo rm -r ./$1; mkdir ./$1
 	fi
 }
-alias postman="chromium --app-id=fhbjgbiflinjbdggehcddcbncdddomop"
-alias inbox="chromium --app-id=pkclgpgponpjmpfokoepglboejdobkpl"
-alias youtube="chromium --app-id=blpcfgokakmgnkcojhhkbfbldkacnbeo"
+
 alias pls="sudo"
+
+chrome() {
+    . ~/bin/chromium-app.zsh 0 ${1:-0}
+}
+
+inbox() {
+    . ~/bin/chromium-app.zsh pkclgpgponpjmpfokoepglboejdobkpl ${1:-0}
+}
+
+youtube() {
+    . ~/bin/chromium-app.zsh blpcfgokakmgnkcojhhkbfbldkacnbeo ${1:-0}
+}
 
 pong() {
   ping -c 6 8.8.8.8
