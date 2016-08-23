@@ -162,4 +162,3 @@ bar {
 }
 
 exec_always terminator
-exec_always chromium
