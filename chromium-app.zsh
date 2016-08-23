@@ -8,9 +8,9 @@ else
     CHROMIUM_PROFILE="Profile "$2
 fi
 
-if [ $1 -eq 0 ]; then
-    chromium --profile-directory=$CHROMIUM_PROFILE
+if [ $1 = "noapp" ]; then
+    nohup chromium --profile-directory=$CHROMIUM_PROFILE &>/dev/null &
 else
-    chromium --app-id=$1 --profile-directory=$CHROMIUM_PROFILE
+    nohup chromium --app-id=$1 --profile-directory=$CHROMIUM_PROFILE &>/dev/null &
 fi
 

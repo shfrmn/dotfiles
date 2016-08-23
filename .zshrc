@@ -57,7 +57,7 @@ empty() {
 alias pls="sudo"
 
 chrome() {
-    . ~/bin/chromium-app.zsh 0 ${1:-0}
+    . ~/bin/chromium-app.zsh noapp ${1:-0}
 }
 
 inbox() {
