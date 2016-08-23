@@ -50,7 +50,7 @@ vol() {
 }
 empty() {
 	if [ $# -gt 0 ]; then
-		sudo rm -r ./$1; mkdir ./$1
+		rm -rf ./$1; mkdir ./$1
 	fi
 }
 
