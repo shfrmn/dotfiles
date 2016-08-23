@@ -68,6 +68,10 @@ youtube() {
     . ~/bin/chromium-app.zsh blpcfgokakmgnkcojhhkbfbldkacnbeo ${1:-0}
 }
 
+tg() {
+    . ~/bin/chromium-app.zsh clhhggbfdinjmjhajaheehoeibfljjno ${1:-0}
+}
+
 pong() {
   ping -c 6 8.8.8.8
 }
