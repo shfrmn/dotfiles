@@ -1,0 +1,103 @@
+"*":
+  "atom-beautify":
+    css:
+      align_assignments: true
+      beautify_on_save: true
+    general:
+      _analyticsUserId: "23133269-c9ff-430d-87d6-d9a2c025e95f"
+  "atom-typescript": {}
+  "code-peek":
+    maxHeight: 800
+    maxWidth: 1000
+  core:
+    disabledPackages: [
+      "highlight-line"
+    ]
+    ignoredNames: [
+      ".git"
+      "node_modules"
+      ".hg"
+      ".svn"
+      ".DS_Store"
+      "._*"
+      "Thumbs.db"
+    ]
+    openEmptyEditorOnStart: false
+    packagesWithKeymapsDisabled: []
+    projectHome: "/home/shfrmn/projects"
+    telemetryConsent: "no"
+    themes: [
+      "one-dark-ui"
+      "genesis-syntax"
+    ]
+  editor:
+    fontSize: 17
+    nonWordCharacters: "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?…"
+    preferredLineLength: 90
+    softWrapHangingIndent: 4
+    tabLength: 4
+    tabType: "soft"
+  "exception-reporting":
+    userId: "07950a27-6915-bdf4-f35b-d5108f1f13ef"
+  "fold-navigator":
+    indentationCharacter: " "
+    keepFolding: true
+    maxFoldLevel: 1
+    showLineNumbers: false
+  fonts:
+    fontFamily: "Droid Sans Mono"
+  "genesis-ui":
+    distractionFree:
+      hideFiles: false
+      hideTabs: false
+  "highlight-line":
+    enableUnderline: true
+    hideHighlightOnSelect: true
+  linter:
+    errorPanelHeight: 28
+  minimap:
+    independentMinimapScroll: true
+    plugins:
+      bookmarks: true
+      bookmarksDecorationsZIndex: 0
+      codeglance: true
+      codeglanceDecorationsZIndex: 0
+      cursorline: true
+      cursorlineDecorationsZIndex: 0
+      "find-and-replace": true
+      "find-and-replaceDecorationsZIndex": 0
+      "highlight-selected": true
+      "highlight-selectedDecorationsZIndex": 0
+      pigments: true
+      pigmentsDecorationsZIndex: 0
+    scrollAnimation: true
+  "minimap-codeglance":
+    numberOfLines: 15
+  "scope-inspector":
+    userId: "37dbca964b23c67315781777aaad2a897ea21a0b"
+  "symbols-tree-view":
+    defaultWidth: 400
+  "tree-view":
+    hideIgnoredNames: true
+    squashDirectoryNames: true
+  welcome:
+    showOnStartup: false
+  whitespace: {}
+".jade.source":
+  editor:
+    tabLength: 4
+".js.regexp.replacement.source":
+  editor:
+    preferredLineLength: 100
+    tabLength: 4
+".js.regexp.source":
+  editor:
+    preferredLineLength: 100
+    tabLength: 4
+".js.source":
+  editor:
+    preferredLineLength: 100
+    tabLength: 4
+".source.ts":
+  editor:
+    nonWordCharacters: "/\\()\"':,.;<>~!@#%^&*|+=[]{}`?…"
