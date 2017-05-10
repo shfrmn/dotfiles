@@ -17,34 +17,13 @@ fi
 #
 
 alias off="sudo pacman -Syu && poweroff"
-alias c="clear"
+alias ga="git add"
+alias gb="git branch"
+alias gp="git push"
+alias gc="git commit"
+alias gs="git status"
 alias glp="git log --oneline"
-up() {
-	UP="../"
-	if [ $# -gt 0 ]; then
-		I=1
-		while [ $I -lt $1 ]; do
-			UP="$UP../"
-			I=$[I+1]
-		done
-	fi
-	cd $UP; ls -a
-}
-jump() {
-	cd ../$1; ls -a
-}
-bm() {
-	ln -s $(pwd) ~/symlinks/$1
-	echo 'Bookmark created'
-}
-to() {
-	cd $(readlink -f ~/symlinks/$1); ls -a
-}
-shist() {
-	if [ $# -gt 0 ]; then
-		history 1 | grep $1
-	fi
-}
+
 vol() {
 	alsamixer -c 0
 }
@@ -76,17 +55,4 @@ pong() {
   ping -c 6 8.8.8.8
 }
 
-screen() {
-	if [ $# -gt 0 ]; then
-		case $1 in
-			"VGA")
-				xrandr --output LVDS1 --off --output VGA1 --auto
-				;;
-			"default")
-				xrandr --output VGA1 --off --output LVDS1 --auto
-				;;
-		esac
-	else
-		xrandr
-	fi
-}
+
