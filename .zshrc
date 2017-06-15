@@ -22,7 +22,8 @@ alias gb="git branch"
 alias gp="git push"
 alias gc="git commit"
 alias gs="git status"
-alias glp="git log --oneline"
+alias gd="git diff"
+alias glp="git log --pretty=oneline --abbrev-commit"
 
 vol() {
 	alsamixer -c 0
