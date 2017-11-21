@@ -42,7 +42,7 @@ On Linux: `sudo dd if=/Arch.iso of=/dev/sdX bs=1M`
 
     # pacman -Sy
 
-    # pacman -S base-devel grub os-prober sudo vim git polkit i3 dmenu xterm terminator bash-completion zsh tree wget xorg xorg-xinit chromium firefox atom
+    # pacman -S base-devel grub os-prober sudo vim git polkit i3 dmenu xterm terminator bash-completion zsh tree wget openssh xorg xorg-xinit chromium firefox atom vlc
 
 If virtualbox (choose virtualbox-guest-modules-arch):
 
