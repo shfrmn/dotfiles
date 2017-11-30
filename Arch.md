@@ -114,7 +114,7 @@ Shut down the system, remove USB drive/image used to install Arch, proceed as a 
 
     # git clone https://github.com/shfrmn/dotfiles ~/code/shfrmn-dotfiles
     # cd ~/code/shfrmn-dotfiles
-    # cp -t ~/ .xinitrc .zshrc .zpreztorc .zprofile .zlogin
+    # cp -t ~/ .xinitrc .gitconfig .zshrc .zpreztorc .zprofile .zlogin
     # cp -t ~/.i3 i3/*
 
     # cd atom
