@@ -23,7 +23,8 @@ alias gp="git push"
 alias gc="git commit"
 alias gs="git status"
 alias gd="git diff"
-alias glp="git log --pretty=oneline --abbrev-commit"
+alias glp="git log --pretty=oneline --abbrev-commit --graph"
+alias gch="git checkout"
 
 vol() {
 	alsamixer -c 0
